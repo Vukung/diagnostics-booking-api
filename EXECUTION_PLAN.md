@@ -62,15 +62,15 @@ This checklist turns `ARCHITECTURE.md` and the assignment brief into implementat
 
 ## Milestone 3: Diagnostic Centres and Tests
 
-- [ ] Add paginated `GET /centres`
-- [ ] Add `GET /centres/{id}` with offered tests and prices
-- [ ] Add admin-only `POST /centres`
-- [ ] Add admin-only `POST /centres/{id}/tests`
-- [ ] Enforce unique centre/test pairs
-- [ ] Validate request data and nonexistent IDs
-- [ ] Validate admin authorization
-- [ ] Validate pagination
-- [ ] Commit: `milestone 3: centres and tests`
+- [x] Add paginated `GET /centres`
+- [x] Add `GET /centres/{id}` with offered tests and prices
+- [x] Add admin-only `POST /centres`
+- [x] Add admin-only `POST /centres/{id}/tests`
+- [x] Enforce unique centre/test pairs
+- [x] Validate request data and nonexistent IDs
+- [x] Validate admin authorization
+- [x] Validate pagination
+- [x] Commit: `milestone 3: centres and tests`
 
 ## Milestone 4: Bookings and State Machine
 
