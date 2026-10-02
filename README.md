@@ -8,7 +8,6 @@ A FastAPI backend for diagnostic centre test bookings and simulated payments.
 - PostgreSQL with SQLAlchemy 2.0
 - Alembic migrations
 - JWT authentication with bcrypt password hashing
-- Docker Compose
 - pytest
 
 ## Run Locally
@@ -16,7 +15,7 @@ A FastAPI backend for diagnostic centre test bookings and simulated payments.
 Requirements:
 
 - Python 3.12+
-- Docker Desktop
+- PostgreSQL 16+
 - Git
 
 Create the environment and install dependencies:
@@ -28,12 +27,18 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-Copy `.env.example` to `.env` and set a long `JWT_SECRET` and `WEBHOOK_SECRET`.
+Copy `.env.example` to `.env` and set long `JWT_SECRET` and `WEBHOOK_SECRET` values.
 
-Start PostgreSQL:
+Create the application role and database in PostgreSQL, or use pgAdmin:
+
+```sql
+CREATE ROLE app WITH LOGIN PASSWORD 'app';
+CREATE DATABASE eve_healthcare OWNER app;
+```
+
+Make sure the PostgreSQL service is running, then apply the migrations:
 
 ```powershell
-docker compose up -d db
 alembic upgrade head
 ```
 
@@ -49,6 +54,13 @@ To run the test suite:
 
 ```powershell
 python -m pytest -q
+```
+
+Docker Compose is optional. If Docker Desktop is installed, it can provide the
+same PostgreSQL service with:
+
+```powershell
+docker compose up -d db
 ```
 
 Integration tests use `TEST_DATABASE_URL` and a separate database. For example:
