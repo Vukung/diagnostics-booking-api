@@ -17,7 +17,7 @@ services:
     build: .
     environment:
       DATABASE_URL: postgresql+psycopg://app:app@db:5432/eve_healthcare
-      JWT_SECRET: change-this-in-production
+      JWT_SECRET: change-this-in-production-with-a-long-secret
       WEBHOOK_SECRET: change-this-webhook-secret
     ports:
       - "8000:8000"
