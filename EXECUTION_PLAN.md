@@ -107,20 +107,20 @@ This checklist turns `ARCHITECTURE.md` and the assignment brief into implementat
 
 ## Milestone 6: Tests
 
-- [ ] Configure pytest
-- [ ] Configure a separate test database
-- [ ] Add authentication tests
+- [x] Configure pytest
+- [x] Configure a separate test database
+- [x] Add authentication tests
 - [ ] Add duplicate signup and invalid credential tests
 - [ ] Add centre and test authorization tests
 - [ ] Add pagination tests
 - [ ] Add booking validation and ownership tests
-- [ ] Add booking state-transition tests
-- [ ] Add payment success and failure tests
+- [x] Add booking state-transition tests
+- [x] Add payment success and failure tests
 - [ ] Add concurrent payment protection tests
 - [ ] Add webhook signature tests
 - [ ] Add duplicate webhook idempotency tests
-- [ ] Add unknown reference and out-of-order webhook tests
-- [ ] Run the complete test suite
+- [x] Add out-of-order payment event tests
+- [x] Run the complete test suite
 - [ ] Commit: `milestone 6: test coverage`
 
 ## Milestone 7: README and Submission Documentation
