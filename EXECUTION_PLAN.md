@@ -89,20 +89,20 @@ This checklist turns `ARCHITECTURE.md` and the assignment brief into implementat
 
 ## Milestone 5: Payments and Webhook
 
-- [ ] Add `POST /payments/`
-- [ ] Support deterministic `success` and `fail` simulation values
-- [ ] Allow payment only for payable bookings
-- [ ] Create payment records with unique provider references
-- [ ] Update payment and booking status transactionally
-- [ ] Add row locking for concurrent payment requests
-- [ ] Add `POST /payments/webhook/`
-- [ ] Verify the webhook HMAC signature
-- [ ] Store webhook event IDs with a unique constraint
-- [ ] Return success without changing state for duplicate events
-- [ ] Lock the payment row while applying webhook updates
-- [ ] Ignore unknown provider references safely
-- [ ] Ignore out-of-order and downgrade events
-- [ ] Ensure webhooks never create bookings or payments
+- [x] Add `POST /payments/`
+- [x] Support deterministic `success` and `fail` simulation values
+- [x] Allow payment only for payable bookings
+- [x] Create payment records with unique provider references
+- [x] Update payment and booking status transactionally
+- [x] Add row locking for concurrent payment requests
+- [x] Add `POST /payments/webhook/`
+- [x] Verify the webhook HMAC signature
+- [x] Store webhook event IDs with a unique constraint
+- [x] Return success without changing state for duplicate events
+- [x] Lock the payment row while applying webhook updates
+- [x] Ignore unknown provider references safely
+- [x] Ignore out-of-order and downgrade events
+- [x] Ensure webhooks never create bookings or payments
 - [ ] Commit: `milestone 5: payments and webhook`
 
 ## Milestone 6: Tests
