@@ -125,17 +125,17 @@ This checklist turns `ARCHITECTURE.md` and the assignment brief into implementat
 
 ## Milestone 7: README and Submission Documentation
 
-- [ ] Document local setup
-- [ ] Document Docker Compose startup
-- [ ] Document migration commands
-- [ ] Document API endpoints
-- [ ] Add example requests and responses
-- [ ] Document database/schema design
-- [ ] Document important assumptions
-- [ ] Document the state machine and webhook idempotency behavior
-- [ ] Document what would be improved with more time
-- [ ] Confirm required submission files are present
-- [ ] Run the final test suite
+- [x] Document local setup
+- [x] Document Docker Compose startup
+- [x] Document migration commands
+- [x] Document API endpoints
+- [x] Add example requests and responses
+- [x] Document database/schema design
+- [x] Document important assumptions
+- [x] Document the state machine and webhook idempotency behavior
+- [x] Document what would be improved with more time
+- [x] Confirm required submission files are present
+- [x] Run the final test suite
 - [ ] Commit: `milestone 7: documentation`
 
 ## Final Review
