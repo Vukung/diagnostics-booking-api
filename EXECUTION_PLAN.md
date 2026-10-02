@@ -74,17 +74,17 @@ This checklist turns `ARCHITECTURE.md` and the assignment brief into implementat
 
 ## Milestone 4: Bookings and State Machine
 
-- [ ] Add booking creation
-- [ ] Verify the requested test is offered at the selected centre
-- [ ] Reject appointments in the past with `422`
-- [ ] Snapshot the centre/test price into `Booking.amount`
-- [ ] Add paginated own-bookings listing
-- [ ] Add booking detail endpoint
-- [ ] Return `404` when accessing another user's booking
-- [ ] Add booking cancellation
-- [ ] Implement all booking status transitions in one service function
-- [ ] Prevent invalid and terminal state transitions
-- [ ] Validate malformed and nonexistent booking IDs
+- [x] Add booking creation
+- [x] Verify the requested test is offered at the selected centre
+- [x] Reject appointments in the past with `422`
+- [x] Snapshot the centre/test price into `Booking.amount`
+- [x] Add paginated own-bookings listing
+- [x] Add booking detail endpoint
+- [x] Return `404` when accessing another user's booking
+- [x] Add booking cancellation
+- [x] Implement all booking status transitions in one service function
+- [x] Prevent invalid and terminal state transitions
+- [x] Validate malformed and nonexistent booking IDs
 - [ ] Commit: `milestone 4: bookings and state machine`
 
 ## Milestone 5: Payments and Webhook
